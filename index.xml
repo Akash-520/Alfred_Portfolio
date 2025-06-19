@@ -15,70 +15,66 @@
             <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
-            <a href="#downloads">Downloads</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I'm a motivated master's student in Computational Materials Science with hands-on
-            experience in nonlinear FEM, numerical simulations, and parallel computing.
-            Skilled in Python, C++, and MATLAB, I specialize in the development and automation
-            of simulation workflows and FEM models for mechanical applications.
-        </p>
-    </section>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I'm a motivated master's student in Computational Materials Science with hands-on
+                experience in nonlinear FEM, numerical simulations, and parallel computing.
+                Skilled in Python, C++, and MATLAB, I specialize in the development and automation
+                of simulation workflows and FEM models for mechanical applications.
+            </p>
+        </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <h3>Simulation Intern – Liebherr GmbH, Rostock (Apr 2025 – Present)</h3>
-        <ul>
-            <li>3D CAD modeling of crane components using Creo</li>
-            <li>Linear/nonlinear FEM analysis using ANSYS Mechanical</li>
-            <li>Fatigue and stress evaluation according to FKM</li>
-            <li>Reporting for design and testing decisions</li>
-        </ul>
-        <h3>Research Assistant – TU Freiberg (Oct 2023 – Nov 2024)</h3>
-        <ul>
-            <li>Small-punch test simulations for material characterization</li>
-            <li>Developed parameter optimization routines</li>
-            <li>Automated data processing, 50% efficiency gain</li>
-            <li>Documented subroutines in LaTeX</li>
-        </ul>
-    </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <h3>Simulation Intern – Liebherr GmbH, Rostock (Apr 2025 – Present)</h3>
+            <ul>
+                <li>3D CAD modeling of crane components using Creo</li>
+                <li>Linear/nonlinear FEM analysis using ANSYS Mechanical</li>
+                <li>Fatigue and stress evaluation according to FKM</li>
+                <li>Reporting for design and testing decisions</li>
+            </ul>
+            <h3>Research Assistant – TU Freiberg (Oct 2023 – Nov 2024)</h3>
+            <ul>
+                <li>Small-punch test simulations for material characterization</li>
+                <li>Developed parameter optimization routines</li>
+                <li>Automated data processing, 50% efficiency gain</li>
+                <li>Documented subroutines in LaTeX</li>
+            </ul>
+        </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <h3>Stress Corrosion FEM Simulation (May 2024 – Oct 2024)</h3>
-        <p>Coupled mechanics, phase-field, and diffusion models to simulate crack growth. Validated against cylinder and pencil electrode tests using FEniCSx.</p>
+        <section id="projects">
+            <h2>Projects</h2>
+            <h3>Stress Corrosion FEM Simulation (May 2024 – Oct 2024)</h3>
+            <p>Coupled mechanics, phase-field, and diffusion models to simulate crack growth. Validated against cylinder and pencil electrode tests using FEniCSx.</p>
 
-        <h3>Parallel SIR Disease Simulation (Jan 2025 – Feb 2025)</h3>
-        <p>Implemented parallel disease spread models using MPI (Python) and OpenMP (C++). Performed scaling analyses on HPC clusters.</p>
-    </section>
+            <h3>Parallel SIR Disease Simulation (Jan 2025 – Feb 2025)</h3>
+            <p>Implemented parallel disease spread models using MPI (Python) and OpenMP (C++). Performed scaling analyses on HPC clusters.</p>
+        </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Simulation Tools:</strong> ANSYS, ABAQUS, FEniCSx, Paraview</li>
-            <li><strong>Programming:</strong> Python, C++, MATLAB</li>
-            <li><strong>Mesh Tools:</strong> ANSA, Hypermesh</li>
-            <li><strong>Other:</strong> Git, LaTeX, MS Office</li>
-            <li><strong>Languages:</strong> English, German, Tamil</li>
-        </ul>
-    </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Simulation Tools:</strong> ANSYS, ABAQUS, FEniCSx, Paraview</li>
+                <li><strong>Programming:</strong> Python, C++, MATLAB</li>
+                <li><strong>Mesh Tools:</strong> ANSA, Hypermesh</li>
+                <li><strong>Other:</strong> Git, LaTeX, MS Office</li>
+                <li><strong>Languages:</strong> English, German, Tamil</li>
+            </ul>
+        </section>
 
-    <section id="downloads">
-        <h2>Downloads</h2>
-        <p><a href="assets/Akash_Kumar_Alfred_BerechnungsIngenieur.pdf" download>Download My CV (PDF)</a></p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:akashkumaralfred@gmail.com">akashkumaralfred@gmail.com</a></p>
-        <p>Phone: <a href="tel:+4915758303163">+49 1575 8303163</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/akashkumar56/" target="_blank">akashkumar56</a></p>
-    </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:akashkumaralfred@gmail.com">akashkumaralfred@gmail.com</a></p>
+            <p>Phone: <a href="tel:+4915758303163">+49 1575 8303163</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/akashkumar56/" target="_blank">akashkumar56</a></p>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2025 Akash Kumar Alfred</p>
