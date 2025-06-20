@@ -80,6 +80,7 @@ footer {
     color: #777;
 }
 
+/* Responsive Layout */
 @media (max-width: 768px) {
     section {
         padding: 1rem 5%;
@@ -89,4 +90,34 @@ footer {
         display: block;
         margin: 0.5rem 0;
     }
+}
+
+/* === DOWNLOAD SECTION ENHANCEMENTS === */
+
+/* Style list in Downloads */
+#downloads ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Style each download link box */
+#downloads li {
+    margin: 0.5rem 0;
+    padding: 0.75rem 1rem;
+    background-color: #f9f9f9;
+    border-left: 4px solid #0066cc;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#downloads li:hover {
+    background-color: #eef6ff;
+}
+
+/* Add download arrow after links */
+#downloads a::after {
+    content: " ⬇";
+    font-size: 0.9em;
+    margin-left: 4px;
+    color: #0066cc;
 }
