@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Projects - Akash Kumar Alfred</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="timeline.css" />
 </head>
 <body>
   <header class="header">
-    <h1>Projects</h1>
+    <h1 class="title">Projects</h1>
     <nav class="nav">
       <a class="nav-link" href="index.html">Home</a>
       <a class="nav-link" href="about.html">About</a>
@@ -17,14 +18,22 @@
     </nav>
   </header>
 
-  <main class="main">
-    <section>
-      <h2>Stress Corrosion FEM Simulation</h2>
-      <p>Simulated crack growth using coupled mechanics, phase-field, and diffusion models. Validated with cylinder and pencil electrode tests in FEniCSx.</p>
+  <main class="main timeline-container">
+    <div class="timeline">
+      <div class="timeline-item"><span class="dot"></span> Stress Corrosion FEM Simulation</div>
+      <div class="timeline-item"><span class="dot"></span> Parallel SIR Disease Simulation</div>
+    </div>
 
-      <h2>Parallel SIR Disease Simulation</h2>
-      <p>Parallelized disease spread models using MPI (Python) and OpenMP (C++). Performed HPC scaling tests.</p>
-    </section>
+    <div class="details-panel">
+      <div class="exp-detail active">
+        <h2>Stress Corrosion FEM Simulation</h2>
+        <p>Simulated crack growth using coupled mechanics, phase-field, and diffusion models. Validated with cylinder and pencil electrode tests in FEniCSx.</p>
+      </div>
+      <div class="exp-detail">
+        <h2>Parallel SIR Disease Simulation</h2>
+        <p>Parallelized disease spread models using MPI (Python) and OpenMP (C++). Performed HPC scaling tests.</p>
+      </div>
+    </div>
   </main>
 
   <footer class="footer">
