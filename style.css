@@ -1,51 +1,163 @@
 /* style.css */
 
+/* Base Setup */
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(-45deg, #f5f7fa, #c3cfe2, #e3f2fd, #e1f5fe);
-  background-size: 400% 400%;
-  animation: gradientShift 15s ease infinite;
-  color: #212529;
-  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  background: linear-gradient(to right, #f0f4f8, #e2e6ea);
+  color: #222;
+  line-height: 1.8;
+}
+
+/* Header */
+.header {
+  background: #1a1a1a;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0.5rem 0;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+/* Navigation */
+.nav {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-header {
-  background-color: #003366;
-  color: white;
-  padding: 1.5rem;
-  text-align: center;
-}
-
-nav {
-  margin-top: 1rem;
-}
-
-nav a {
-  color: white;
-  margin: 0 1rem;
-  text-decoration: none;
+.nav-link {
+  font-size: 1.2rem;
   font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
+  text-decoration: none;
   color: #ffd700;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  transition: background 0.3s ease;
 }
 
-footer {
-  background-color: #f1f1f1;
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Main */
+.main {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Profile Section */
+.profile-container {
   text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: #666;
-  margin-top: auto;
+}
+
+.profile-img-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 6px solid #ffd700;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 215, 0, 0.3);
+}
+
+.circle1 {
+  width: 250px;
+  height: 250px;
+  top: -25px;
+  left: -25px;
+  z-index: -1;
+}
+
+.circle2 {
+  width: 300px;
+  height: 300px;
+  top: -50px;
+  left: -50px;
+  z-index: -2;
+}
+
+.bio {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 2rem auto;
+  text-align: justify;
+}
+
+/* Buttons */
+.cv-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #ffd700;
+  color: #000;
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.cv-button:hover {
+  background: #ffcc00;
+}
+
+/* Downloads List */
+.download-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.125rem;
+}
+
+.download-list li {
+  margin-bottom: 1.25rem;
+}
+
+.download-list a {
+  text-decoration: none;
+  color: #0056b3;
+  font-weight: 600;
+}
+
+.download-list a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Info */
+.contact-info p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #1a1a1a;
+  color: #ccc;
+  font-size: 1rem;
 }
