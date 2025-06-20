@@ -161,3 +161,47 @@ body {
   color: #ccc;
   font-size: 1rem;
 }
+
+.skills {
+  margin-top: 3rem;
+}
+
+.skills h2,
+.skills h3 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  color: #333;
+}
+
+.skill {
+  margin: 1rem 0;
+}
+
+.skill label {
+  display: block;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.bar {
+  background-color: #e0e0e0;
+  border-radius: 12px;
+  height: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.level {
+  height: 100%;
+  color: white;
+  text-align: right;
+  padding-right: 10px;
+  font-size: 1rem;
+  line-height: 20px;
+  border-radius: 12px;
+  transition: width 1.2s ease-in-out;
+  background: linear-gradient(to right, #3f87a6, #00bfa5);
+  width: 0; /* Animated from 0% to actual value */
+}
+
