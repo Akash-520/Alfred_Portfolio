@@ -10,10 +10,30 @@
       document.querySelectorAll('.exp-detail').forEach(el => el.classList.remove('active'));
       document.getElementById(id).classList.add('active');
     }
+  
     window.onload = () => {
       showDetails('exp1'); // default
+      animateSkills();     // animate bars
+    };
+  
+    function animateSkills() {
+      const levels = document.querySelectorAll('.level');
+      levels.forEach(el => {
+        const classList = el.classList;
+        let percent = 0;
+  
+        if (classList.contains('strong')) percent = 90;
+        else if (classList.contains('intermediate')) percent = 60;
+        else if (classList.contains('basic')) percent = 30;
+  
+        el.style.width = '0';
+        setTimeout(() => {
+          el.style.width = percent + '%';
+        }, 100);
+      });
     }
   </script>
+
 </head>
 <body>
   <header>
