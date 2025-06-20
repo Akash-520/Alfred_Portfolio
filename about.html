@@ -5,48 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Me | Akash Kumar Alfred</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="timeline.css" />
   <script>
     function showDetails(id) {
       document.querySelectorAll('.exp-detail').forEach(el => el.classList.remove('active'));
       document.getElementById(id).classList.add('active');
     }
-  
-    window.onload = () => {
-      showDetails('exp1'); // default
-      animateSkills();     // animate bars
-    };
-  
+
     function animateSkills() {
       const levels = document.querySelectorAll('.level');
       levels.forEach(el => {
         const classList = el.classList;
         let percent = 0;
-  
+
         if (classList.contains('strong')) percent = 90;
         else if (classList.contains('intermediate')) percent = 60;
         else if (classList.contains('basic')) percent = 30;
-  
+
         el.style.width = '0';
         setTimeout(() => {
           el.style.width = percent + '%';
         }, 100);
       });
     }
-  </script>
 
+    window.onload = () => {
+      showDetails('exp1');
+      animateSkills();
+    };
+  </script>
 </head>
 <body>
-  <header>
-    <h1>About Me</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="downloads.html">Downloads</a>
-      <a href="contact.html">Contact</a>
+  <header class="header">
+    <h1 class="title">About Me</h1>
+    <nav class="nav">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="projects.html">Projects</a>
+      <a class="nav-link" href="downloads.html">Downloads</a>
+      <a class="nav-link" href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <main class="timeline-container">
+  <main class="main timeline-container">
     <div class="timeline">
       <div class="timeline-item" onclick="showDetails('exp1')">
         <div class="dot"></div>
@@ -68,6 +68,7 @@
           <li>Reporting for design and testing decisions</li>
         </ul>
       </div>
+
       <div id="exp2" class="exp-detail">
         <h2>Research Assistant – TU Freiberg (Oct 2023 – Nov 2024)</h2>
         <ul>
@@ -80,37 +81,36 @@
 
       <section class="skills">
         <h2>Skills</h2>
-      
+
         <h3>Simulation Tools</h3>
         <div class="skill"><label>ANSYS</label><div class="bar"><div class="level strong">Strong</div></div></div>
         <div class="skill"><label>ABAQUS</label><div class="bar"><div class="level intermediate">Intermediate</div></div></div>
         <div class="skill"><label>FEniCSx</label><div class="bar"><div class="level intermediate">Intermediate</div></div></div>
         <div class="skill"><label>Paraview</label><div class="bar"><div class="level basic">Basic</div></div></div>
-      
+
         <h3>Programming</h3>
         <div class="skill"><label>Python</label><div class="bar"><div class="level strong">Strong</div></div></div>
         <div class="skill"><label>C++</label><div class="bar"><div class="level intermediate">Intermediate</div></div></div>
         <div class="skill"><label>MATLAB</label><div class="bar"><div class="level intermediate">Intermediate</div></div></div>
-      
+
         <h3>Mesh Tools</h3>
         <div class="skill"><label>ANSA</label><div class="bar"><div class="level intermediate">Intermediate</div></div></div>
         <div class="skill"><label>Hypermesh</label><div class="bar"><div class="level basic">Basic</div></div></div>
-      
+
         <h3>Other</h3>
         <div class="skill"><label>Git</label><div class="bar"><div class="level intermediate">Intermediate</div></div></div>
         <div class="skill"><label>LaTeX</label><div class="bar"><div class="level strong">Strong</div></div></div>
         <div class="skill"><label>MS Office</label><div class="bar"><div class="level intermediate">Intermediate</div></div></div>
-      
+
         <h3>Languages</h3>
         <div class="skill"><label>English</label><div class="bar"><div class="level strong">Strong</div></div></div>
         <div class="skill"><label>German</label><div class="bar"><div class="level intermediate">Intermediate</div></div></div>
         <div class="skill"><label>Tamil</label><div class="bar"><div class="level strong">Strong</div></div></div>
       </section>
-
     </div>
   </main>
 
-  <footer>
+  <footer class="footer">
     <p>© 2025 Akash Kumar Alfred</p>
   </footer>
 </body>
