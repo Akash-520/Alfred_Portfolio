@@ -39,35 +39,27 @@ nav a:hover {
   min-height: 80vh;
 }
 
+/* Add inline or in style.css */
 .timeline {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-  border-left: 3px solid #004080;
-  padding-left: 1rem;
+  width: 200px; /* increased from small default */
+  flex-shrink: 0;
 }
 
 .timeline-item {
   cursor: pointer;
-  margin-bottom: 1.5rem;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.timeline-item:hover .company-title {
-  font-weight: bold;
-  color: #004080;
+  margin-bottom: 1rem;
 }
 
 .dot {
-  width: 14px;
-  height: 14px;
-  background-color: #004080;
+  width: 10px;
+  height: 10px;
+  background: #007bff;
   border-radius: 50%;
-  position: absolute;
-  left: -8px;
-  margin-top: 3px;
+  display: inline-block;
+  margin-right: 8px;
 }
+
+
 
 .details-panel {
   flex: 1;
